@@ -41,6 +41,6 @@ def flatten(df):
         complex_fields = dict([(field.name, field.dataType)
                                for field in df.schema.fields
                                if type(field.dataType) == ArrayType or type(field.dataType) == StructType])
-    return df1
+    return df
 
 
