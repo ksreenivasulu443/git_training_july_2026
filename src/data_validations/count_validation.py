@@ -1,5 +1,7 @@
 
 import time
+
+from Tools.demo.eiffel import Tests
 from src.utility.report_lib import write_output
 
 def count_check(source, target):
@@ -39,3 +41,5 @@ def count_check(source, target):
     )
 
     return status
+
+# Tests
