@@ -38,8 +38,8 @@ def data_compare(source_df, target_df, key_columns,num_records=10):
             join(failed2, ["hash_key"], how='left_semi').drop('hash_key')
 
         print("after hash filter")
-        source_df.show() #failed rows 101,104
-        target_df.show() # failed 101,104
+        source_df.show()
+        target_df.show()
 
         columnList = source_df.columns# [customer_id,name,email,phone, batchid]
         print("columnList", columnList)
